@@ -1,0 +1,40 @@
+<html>
+    <head>
+
+    <title> soft deleted book</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    </head>
+
+        <body>
+            <h2>All Soft Deleted Books</h2>
+
+            <table class="table table-dark table-sm" >
+                <thead>
+                    <tr>
+                        <th scope="col">Book_Id</th>
+                        <th scope="col">Book_Name</th>
+                        <th scope="col">Book_Price</th>
+                        <th scope="col">Book_Qty</th>
+                        <th scope="col">Action</th>
+                    </thead>
+                        {% for book in books %}
+                    </tr>
+                        <td>{{book.id}}</td>
+                        <td>{{book.Name}}</td>
+                        <td>{{book.Price}}</td>
+                        <td>{{book.qty}}</td>
+
+                    <td>
+                    <a href="{% url 'edit_book' book.id %}"><button type="button" class="btn btn-success">restore</button></a>&nbsp;&nbsp;<br><br>
+                    </td>
+            
+                    </tr>
+                        {% endfor %}
+
+            <hr>
+            <a href="{% url 'create_book' %}"><button type="button" class="btn btn-success">create_book</button></a><br>
+            <hr>
+        </body>
+
+</html>

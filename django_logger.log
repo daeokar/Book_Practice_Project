@@ -1,0 +1,58 @@
+[2022-04-13 13:40:57] INFO Edit the book ....!
+[2022-04-13 13:41:24] INFO Create the book ...!
+[2022-04-13 13:41:24] INFO In the Show all page .....!
+[2022-04-13 13:41:28] INFO Soft deleted book by their id.....!
+[2022-04-13 13:41:28] INFO In the Show all page .....!
+[2022-04-13 13:41:34] INFO Delete the book by their id.....!
+[2022-04-13 13:41:34] INFO In the Show all page .....!
+[2022-04-13 13:42:10] INFO Delete the book by their id.....!
+[2022-04-13 13:42:10] INFO In the Show all page .....!
+[2022-04-13 13:42:28] INFO Delete the book by their id.....!
+[2022-04-13 13:42:28] INFO In the Show all page .....!
+[2022-04-13 13:43:22] INFO In the Show all page .....!
+[2022-04-13 13:44:06] INFO Edit the book ....!
+[2022-04-13 13:44:06] ERROR Book matching query does not exist.
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\Desktop\Practice\DjangoPractice\Book\Book_App\views.py", line 73, in edit_book
+    book = Book.objects.get(id=id)
+  File "C:\Users\Lenovo\Desktop\aniket\b6\b6_env\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Lenovo\Desktop\aniket\b6\b6_env\lib\site-packages\django\db\models\query.py", line 439, in get
+    raise self.model.DoesNotExist(
+Book_App.models.Book.DoesNotExist: Book matching query does not exist.
+[2022-04-13 13:46:23] INFO Edit the book ....!
+[2022-04-13 14:18:48] INFO In the Show all page .....!
+[2022-04-13 14:18:48] INFO <QuerySet [<Book: Book212>, <Book: Tom>, <Book: Book1>]>
+[2022-04-13 14:22:46] INFO Delete the book by their id.....!
+[2022-04-13 14:22:46] INFO Book212
+[2022-04-13 14:22:46] INFO In the Show all page .....!
+[2022-04-13 14:22:46] INFO <QuerySet [<Book: Tom>, <Book: Book1>]>
+[2022-04-13 14:26:24] INFO Create the book ...!
+[2022-04-13 14:26:33] INFO Create the book ...!
+[2022-04-13 14:26:33] INFO In the Show all page .....!
+[2022-04-13 14:26:33] INFO <QuerySet [<Book: Tom>, <Book: Book1>, <Book: Tom121>]>
+[2022-04-13 14:27:25] INFO Create the book ...!
+[2022-04-13 14:27:25] INFO <QueryDict: {'csrfmiddlewaretoken': ['4otyXIcaKe5wcNg8PoLNivmI2ysGc2sGqAhoS7jWzSF02IOzeByql3J7WGJ9PheG'], 'bname': ['Book555'], 'bprice': ['84962'], 'bqut': ['84'], 'Submit': ['Submit']}>
+[2022-04-13 14:27:26] INFO In the Show all page .....!
+[2022-04-13 14:27:26] INFO <QuerySet [<Book: Tom>, <Book: Book1>, <Book: Tom121>, <Book: Book555>]>
+[2022-04-13 14:33:33] INFO Soft deleted book by their id.....!
+[2022-04-13 14:33:33] INFO In the Show all page .....!
+[2022-04-13 14:33:33] INFO <QuerySet [<Book: Tom>, <Book: Book1>, <Book: Tom121>, <Book: Book555>]>
+[2022-04-13 14:33:38] INFO SHow all soft deleted book ....!
+[2022-04-13 14:33:38] INFO <QuerySet [<Book: Tom>]>
+[2022-04-13 14:33:48] INFO In the Show all page .....!
+[2022-04-13 14:33:48] INFO <QuerySet [<Book: Tom>, <Book: Book1>, <Book: Tom121>, <Book: Book555>]>
+[2022-04-13 14:33:50] INFO Soft deleted book by their id.....!
+[2022-04-13 14:33:50] INFO In the Show all page .....!
+[2022-04-13 14:33:50] INFO <QuerySet [<Book: Tom>, <Book: Book1>, <Book: Tom121>, <Book: Book555>]>
+[2022-04-13 14:33:51] INFO Soft deleted book by their id.....!
+[2022-04-13 14:33:51] INFO In the Show all page .....!
+[2022-04-13 14:33:51] INFO <QuerySet [<Book: Tom>, <Book: Book1>, <Book: Tom121>, <Book: Book555>]>
+[2022-04-13 14:33:55] INFO SHow all soft deleted book ....!
+[2022-04-13 14:33:55] INFO <QuerySet [<Book: Tom>, <Book: Tom121>, <Book: Book555>]>
+[2022-04-13 14:34:52] ----- INFO ----- Edit the book ....!
+[2022-04-13 14:34:53] ----- INFO ----- Tom
+[2022-04-13 14:34:55] ----- INFO ----- Create the book ...!
+[2022-04-13 14:34:55] ----- INFO ----- <QueryDict: {'csrfmiddlewaretoken': ['Gl7bIKMzhe1LVo2t2LMW8G17kMMpPudT2xV1D9Tl6SBfLjAUrYzzbeoweU3SsJZT'], 'bid': ['24'], 'bname': ['Tom'], 'bprice': ['948'], 'bqut': ['56'], 'Submit': ['Submit']}>
+[2022-04-13 14:34:55] ----- INFO ----- In the Show all page .....!
+[2022-04-13 14:34:55] ----- INFO ----- <QuerySet [<Book: Tom>, <Book: Book1>, <Book: Tom121>, <Book: Book555>]>
